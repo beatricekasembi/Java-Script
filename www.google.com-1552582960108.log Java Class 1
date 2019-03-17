@@ -1,0 +1,151 @@
+newtab?ie=UTF-8:8 SW registered
+var foo;
+undefined
+var bar = null;
+undefined
+let fruits = [];
+undefined
+var a = 2;
+undefined
+var b = 3
+undefined
+var c = a*b;
+undefined
+var c = a * b;
+undefined
+var d = "dog"
+undefined
+d
+"dog"
+var obj1 = {}
+undefined
+var obj2 = { name: 'lovelace', subject: 'JS' }
+undefined
+obj1
+{}
+obj2.name
+"lovelace"
+obj2.subject
+"JS"
+obj1.name
+undefined
+var greetings = 'How are you?';
+undefined
+console.log(greetings);
+VM538:1 How are you?
+undefined
+console.error(greetings);
+VM597:1 How are you?
+(anonymous) @ VM597:1
+undefined
+console.info("You are doing good");
+VM643:1 You are doing good
+undefined
+console.warn("Gosh! Something is not right");
+VM700:1 Gosh! Something is not right
+(anonymous) @ VM700:1
+undefined
+alert('How are you?';)
+VM733:1 Uncaught SyntaxError: missing ) after argument list
+alert('How are you?');
+undefined
+alert('Happy Birthday Beatrice';)
+alert('Happy Birthday Beatrice');
+VM744:1 Uncaught SyntaxError: missing ) after argument list
+undefined
+confirm('Are you sure');
+true
+confirm('Are you sure');
+false
+prompt('What is your name?');
+"Beatrice Kasembi Munywoki"
+var name = prompt("What is your name?");
+undefined
+alert("Your name is " + name);
+alert("Your name is " + name);
+undefined
+undefined
+var name = prompt("What is your name?")
+undefined
+var name = prompt("What is your name?");
+alert("Your name is " + name);
+undefined
+var a = 2;
+undefined
+a = a + 3;
+5
+var a = 2;
+undefined
+a += 3;
+5
+a -= 2;
+3
+a
+3
+a ++ 5;
+VM1028:1 Uncaught SyntaxError: Unexpected number
+a ++
+3
+var e = 2;
+undefined
+e++
+2
+e
+3
+e++
+3
+e
+4
+e--
+4
+e
+3
+4 = "love"
+VM1120:1 Uncaught ReferenceError: Invalid left-hand side in assignment
+4 = "love";
+VM1124:1 Uncaught ReferenceError: Invalid left-hand side in assignment
+4 === 4
+true
+marks >= 80? console.log("pass") : console.log c "fail");
+VM1210:1 Uncaught SyntaxError: Unexpected identifier
+marks >= 80? console.log("pass") : console.log("fail");
+VM1223:1 Uncaught ReferenceError: marks is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1223:1
+var marks = 84;
+undefined
+marks >= 80? console.log("pass") : console.log("fail");
+VM1255:1 pass
+undefined
+var clearedFee = true;
+undefined
+marks >= 80 && clearedFee
+true
+var clearedFee = false;
+undefined
+marks >= 80 && clearedFee
+false
+marks >= 80 || clearedFee
+true
+marks >= 80 || clearedFee
+true
+marks >= 80 ? console.log("PASS") :
+console.log("FAIL");
+VM1434:1 PASS
+undefined
+typeof marks
+"number"
+marks = "excellence"
+"excellence"
+typeof marks
+"string"
+var obj3 = { age: 40 }
+undefined
+"age" in obj3
+true
+"name" in obj3
+false
+null
+null
+typeof null
+"object"
