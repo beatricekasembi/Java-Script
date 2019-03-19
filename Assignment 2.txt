@@ -1,0 +1,24 @@
+MY WEEK 2 : JAVASCRIPT ASSIGNMENT
+
+DECLARATION 
+Creating a variable in JavaScript is called "declaring" a variable. You declare a JavaScript variable with the var keyword: var carName; After the declaration, the variable has no value (technically it has the value of undefined).
+Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are invoked (called upon).
+Example:
+function myFunction(a, b) {
+  return a * b;
+}
+
+INITIALIZING
+Initialization is the means of assigning an initial value to a variable. So undefined is the initial value of a declared variable.  
+Example:
+Var a = 12
+Undefined.
+
+
+DEFINITION
+This is the process by which a variable is assigned a value.
+Example:
+Var a = 12
+a = 12 
+
+
