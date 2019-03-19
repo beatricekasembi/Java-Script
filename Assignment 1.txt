@@ -1,0 +1,14 @@
+The difference between undefined and null variable
+* Undefined means a variable has been declared but has not yet been assigned a value. On the other hand, null variable is one where there is no value declared.
+
+Example:
+* var a = 2……….. this is undefined variable.
+Undefined 
+* Null   -   It is an empty container.
+Null
+
+
+
+
+
+
