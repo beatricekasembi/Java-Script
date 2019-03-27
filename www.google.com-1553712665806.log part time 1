@@ -1,0 +1,116 @@
+var name = prompt("What is your name?");
+alert("Your name is " + name);
+undefined
+marks >= 80 ? console.log("PASS") :
+console.log("FAIL");
+marks >= 80 ? console.log("PASS") :
+console.log("FAIL");
+marks >= 80 ? console.log("PASS") :
+console.log("FAIL");
+marks >= 80 ? console.log("PASS") :
+console.log("FAIL");
+VM62:1 Uncaught ReferenceError: marks is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM62:1
+VM63:1 Uncaught ReferenceError: marks is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM63:1
+VM64:1 Uncaught ReferenceError: marks is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM64:1
+VM65:1 Uncaught ReferenceError: marks is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM65:1
+var marks = 84;
+undefined
+marks >= 80 ? console.log("PASS") :
+console.log("FAIL");
+VM95:1 PASS
+undefined
+marks >= 80 ? console.log("PASS") :
+console.log("FAIL");
+VM102:1 PASS
+undefined
+marks >= 76 ? console.log("PASS") :
+console.log("FAIL");
+VM194:1 PASS
+undefined
+var marks = 76;
+undefined
+marks >= 84 ? console.log("PASS") :
+console.log("FAIL");
+VM221:2 FAIL
+undefined
+marks >= 80 || clearedFee
+VM308:1 Uncaught ReferenceError: clearedFee is not defined
+    at <anonymous>:1:16
+(anonymous) @ VM308:1
+var marks = 84;
+undefined
+var clearedFee = true;
+undefined
+marks >= 80 && clearedFee
+true
+var clearedFee = false;
+undefined
+marks >= 80 || clearedFee
+true
+var marks = 76;
+undefined
+marks >= 80 && clearedFee
+false
+var beatrice = ({Name:"Beatrice",Age:23,Marks:84})
+undefined
+marks >= 80? console.log("pass") : console.log("fail");
+VM531:1 fail
+undefined
+if (marks >=80) {
+    console.log("pass");
+}
+undefined
+if (marks >=80) {
+    console.log("pass");
+}
+else {
+    console.log("fail");
+}
+VM680:5 fail
+undefined
+var name = Beatrice;
+VM719:1 Uncaught ReferenceError: Beatrice is not defined
+    at <anonymous>:1:12
+(anonymous) @ VM719:1
+var name = "Beatrice";
+undefined
+var name = "Beatrice";
+var name = "James";
+var obj 1 = {}
+var obj 2 = {name:"Lovelace",subject:"JS"}
+VM836:3 Uncaught SyntaxError: Unexpected number
+var name = "Beatrice";
+var name = "James";
+undefined
+var obj 1 = {}
+VM938:1 Uncaught SyntaxError: Unexpected number
+var obj 1 = {}
+VM950:1 Uncaught SyntaxError: Unexpected number
+var obj1 = {}
+undefined
+var obj2 = { name: 'lovelace', subject: 'JS' }
+undefined
+var obj3 = { age: 40 }
+undefined
+obj1
+{}
+obj2
+{name: "lovelace", subject: "JS"}
+obj1.name
+undefined
+obj2.name
+"lovelace"
+obj3.name
+undefined
+var obj2.subject
+VM1086:1 Uncaught SyntaxError: Unexpected token .
+obj2.subject
+"JS"

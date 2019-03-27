@@ -5,10 +5,13 @@ undefined
 fruits
 (5) ["mango", "apples", "oranges", "bananas", "water melon"]
 
+<<<<<<< HEAD:Assignment 3 edited.txt
+=======
 
 var fruitsindex = prompt("Pick a number from 0-4 and you will get a fruit")
 
 
+>>>>>>> d0e8483171386672b667104c27d50ecf8e66adb0:Assignment 3 edited.txt
 getFruit(fruits,fruitsindex) { return(fruits[fruitsindex]);}
 
 
@@ -20,7 +23,14 @@ undefined
 
 var fruitsindex = prompt("Pick a number from 0-4 and you will get a fruit")
 
+<<<<<<< HEAD:Assignment 3 edited.txt
 
+var fruitsindex = prompt("Pick a number from 0-4 and you will get a fruit")
+
+
+=======
+
+>>>>>>> d0e8483171386672b667104c27d50ecf8e66adb0:Assignment 3 edited.txt
 getFruit(fruits,fruitsindex) { return(fruits[fruitsindex]);}
  
 
