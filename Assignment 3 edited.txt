@@ -1,0 +1,30 @@
+﻿
+
+var fruits = ['mango', 'apples', 'oranges','bananas','water melon']
+undefined
+fruits
+(5) ["mango", "apples", "oranges", "bananas", "water melon"]
+
+
+var fruitsindex = prompt("Pick a number from 0-4 and you will get a fruit")
+
+
+getFruit(fruits,fruitsindex) { return(fruits[fruitsindex]);}
+
+
+oranges
+
+
+undefined
+
+
+var fruitsindex = prompt("Pick a number from 0-4 and you will get a fruit")
+
+
+getFruit(fruits,fruitsindex) { return(fruits[fruitsindex]);}
+ 
+
+apples
+
+
+undefined
