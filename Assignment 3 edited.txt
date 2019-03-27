@@ -9,9 +9,6 @@ fruits
 var fruitsindex = prompt("Pick a number from 0-4 and you will get a fruit")
 
 
-console.log(fruits[fruitsindex]);
-function 
-
 getFruit(fruits,fruitsindex) { return(fruits[fruitsindex]);}
 
 
@@ -23,9 +20,6 @@ undefined
 
 var fruitsindex = prompt("Pick a number from 0-4 and you will get a fruit")
 
-
-console.log(fruits[fruitsindex]);
-function 
 
 getFruit(fruits,fruitsindex) { return(fruits[fruitsindex]);}
  
