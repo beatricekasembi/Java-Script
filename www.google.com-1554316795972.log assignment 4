@@ -1,0 +1,17 @@
+newtab?ie=UTF-8:8 SW registered
+fruits = {'mango':100, 'banana':40, 'orange':30}
+{mango: 100, banana: 40, orange: 30}
+fruits['banana']
+40
+var quantity=2;
+undefined
+fruits['banana']*quantity
+80
+quantity + ' mango' + ' for KES ' + fruits['mango']*quantity
+"2 mango for KES 200"
+function calculatefruitcost(fruitname,quantity){
+    return "2 mango for KES 200";
+}
+undefined
+calculatefruitcost(fruits,quantity);
+"2 mango for KES 200"

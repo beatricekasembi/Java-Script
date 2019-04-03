@@ -1,0 +1,121 @@
+newtab?ie=UTF-8:8 SW registered
+var person = {
+    name  : "Beatrice Kasembi",
+    age : 23,
+    gender : "female"
+}
+undefined
+person.name
+"Beatrice Kasembi"
+person.name.toUpperCase
+ƒ toUpperCase() { [native code] }
+person.name.toUpperCase()
+"BEATRICE KASEMBI"
+person.gender.toLocaleUpperCase()
+"FEMALE"
+person.name.toLowerCase()
+"beatrice kasembi"
+var human = person
+undefined
+human
+{name: "Beatrice Kasembi", age: 23, gender: "female"}
+human.name = "James";
+"James"
+human
+{name: "James", age: 23, gender: "female"}
+person
+{name: "James", age: 23, gender: "female"}
+var being = object.assign({}, human)
+VM401:1 Uncaught ReferenceError: object is not defined
+    at <anonymous>:1:13
+(anonymous) @ VM401:1
+var being = "Michael"
+undefined
+var being = object.assign({}, human)
+VM430:1 Uncaught ReferenceError: object is not defined
+    at <anonymous>:1:13
+(anonymous) @ VM430:1
+var being = Object.assign({}, source)
+VM504:1 Uncaught ReferenceError: source is not defined
+    at <anonymous>:1:31
+(anonymous) @ VM504:1
+var being = Object.assign({}, human)
+undefined
+human.name
+"James"
+being
+{name: "James", age: 23, gender: "female"}
+human = "jane"
+"jane"
+being 
+{name: "James", age: 23, gender: "female"}
+human
+"jane"
+function getName () {}
+undefined
+function getName () {
+}
+undefined
+function getName () {
+	return "Beatrice Kasembi"
+
+}
+undefined
+getName()
+"Beatrice Kasembi"
+var myName = getName()
+undefined
+myName
+"Beatrice Kasembi"
+var a = "hello world";
+undefined
+a.length
+11
+a.toLocaleUpperCase
+ƒ toLocaleUpperCase() { [native code] }
+a.toLocaleUpperCase();
+"HELLO WORLD"
+var b = 428;
+undefined
+b.toFixed()
+"428"
+var c = 4.5895;
+undefined
+c.toFixed()
+"5"
+***/hbhgh**/
+VM930:1 Uncaught SyntaxError: Unexpected token **
+ next class  = hoisting 
+VM960:1 Uncaught SyntaxError: Unexpected token class
+let a = 100;
+VM977:1 Uncaught SyntaxError: Identifier 'a' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM977:1
+'100'==100
+true
+'100'===100
+false
+""
+""
+truth values 
+null,undefined,0,-0,undefined,NaN
+VM1091:1 Uncaught SyntaxError: Unexpected identifier
+var obj = {}
+undefined
+if (obj) {console.log(true)} else {console.log(false)}
+VM1217:1 true
+undefined
+if ("name" in obj) {console.log(true)} else {console.log(false)}
+VM1285:1 false
+undefined
+var a = ["Beatrice"]
+undefined
+if (a.length) {console.log(true)} else {console.log(false)}
+VM1358:1 true
+undefined
+var a = [1,2,3,];
+undefined
+var b = [1,2,3];
+undefined
+a==b
+false
