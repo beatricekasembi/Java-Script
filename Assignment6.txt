@@ -1,0 +1,30 @@
+function kiosk(){
+  var Fruits; 
+  Fruits = [];
+  
+}
+
+function setFruit(Fruit){
+  Fruits = Fruits + Fruit;
+  
+}
+
+function getFruit(){
+  
+  return Fruits 
+}
+
+var publicAPI = 
+{
+  get : getFruits,
+  set : setFruits
+}
+
+ return publicAPI;
+
+}
+
+var Kiosk = kiosk();
+Kiosk.set("Banana");
+Kiosk.set(" "+"Strawberry");
+console.log(Kiosk.get());

@@ -1,0 +1,67 @@
+function kiosk() {
+    var Fruits;
+    fruits = [];
+function setFruit(Fruit) {
+    Fruits = Fruits + Fruit;
+}
+function getFruit() {
+}
+VM255:8 Uncaught SyntaxError: Unexpected end of input
+function kiosk() {
+    var Fruits;
+    fruits = [];
+function setFruit(Fruit) {
+    Fruits = Fruits + Fruit;
+}
+function getFruit() {
+
+VM259:8 Uncaught SyntaxError: Unexpected end of input
+function kiosk() {
+    var Fruits;
+    fruits = [];
+function setFruit(Fruit) {
+    Fruits = Fruits + Fruit;
+}
+function getFruit() {
+	return Fruits
+
+VM287:9 Uncaught SyntaxError: Unexpected end of input
+function kiosk() {
+    var Fruits;
+    fruits = [];
+function setFruit(Fruit) {
+    Fruits = Fruits + Fruit;
+}
+function getFruit() {
+	return Fruits
+}
+
+VM293:10 Uncaught SyntaxError: Unexpected end of input
+function kiosk() {
+    var Fruits;
+    fruits = [];
+function setFruit(Fruit) {
+    Fruits = Fruits + Fruit;
+}
+function getFruit() {
+	return Fruits
+}
+
+var publicAPI ={
+	get : getFruit,
+	set : setFruit
+}
+
+return publicAPI;
+
+}
+
+var Kiosk = kiosk();
+Kiosk.set("Strawberry");
+Kiosk.set("," + "Banana")
+console.log(Kiosk.get());
+
+
+
+VM661:23 undefinedStrawberry,Banana
+undefined
