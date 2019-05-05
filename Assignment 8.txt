@@ -1,0 +1,38 @@
+Question 1:
+
+let user = {
+  
+  name : "Beatrice Kasembi",
+  year : 23,
+  isStudent : "isStudent"
+}
+
+
+let {name : firstName,year,isStudent =("false if absent")} = user;
+
+console.log(firstName,year,isStudent);
+
+
+Output:
+
+"Beatrice Kasembi"
+23
+"isStudent"
+
+
+
+
+
+
+Question 2:
+
+let ask =(question, yes, no) =>{
+  if (confirm(question)) yes()
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  ()=> { console.log("You agreed."); },
+  ()=> { console.log("You canceled the execution."); }
+  );
