@@ -1,0 +1,56 @@
+class mumMboga{
+  
+  constructor(){
+    
+    this.products = [];
+    this .carts = [];
+    this.orders = [];
+    this.customers = [];
+  }
+  
+  addProduct (productId,name,price,quantity){
+    
+      var product = {id:productid,name:name,productPrice:price,quantity:quantity}
+      this.products.push(product)
+      return this.products
+}
+  
+
+
+
+
+
+removeProduct (productId) {
+    return this.products;
+  } 
+  
+  updateProduct (productId, name, price, quantity) {
+   return this.products+' '+this.carts+' '+this.orders+' '+this.customers;
+  }
+  
+  getProduct (productId) {
+    var app = {
+      ProductId: 33617877,
+      name: "Beatrice",
+      price: 100,
+      quantity: "65"
+    };
+    return app ;
+  }
+  
+  
+const betty = new mumMboga ("kayole","banana",10,20);
+console.log (betty.addProduct());
+
+const bee = new mumMboga ("N/A");
+console.log (bee.removeProduct());
+
+const bt = new mumMboga ("Muthurwa","oranges",100,30);
+console.log (bt.updateProduct());
+
+const beto = new mumMboga ("Amboseli");
+console.log (beto.getProduct());
+
+const b2 = new mumMboga ();
+console.log (b2.getProductCatalog());
+

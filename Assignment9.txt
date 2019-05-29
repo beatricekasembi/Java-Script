@@ -1,0 +1,129 @@
+class MumMboga{
+  
+  constructor() {
+    
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers = [];
+    
+  }
+  
+  addProduct(productId,name,price,quantity){
+    var product = {id:productId,name:name,price:price,quantity:quantity}
+    this.products.push(product)
+    return this.products
+  }
+  
+  getProduct(productId){
+    for(var i=0; i<this.products.length; i++){
+      let product = this.products[i]
+      if(product.id===productId){
+        return product
+      }
+    }
+    
+  }
+  
+  removeProduct(productId){
+    
+    let product = this.getproduct(productId)
+    let index = this.products.indexOf(product)
+    this.products.splice(index,1)
+  }
+  
+  updateProduct(productId,name,price,quantity){
+    var myArray = this.products
+    var objIndex = myArray.findIndex(obj=>obj.id==productId);
+    myArray[objIndex].id=productId
+    myArray[objIndex].name = name
+    myArray[objIndex].price = price
+    myArray[objIndex].quantity = quantity
+    return myArray
+  }
+  
+  getProductCatalog(){
+    
+    var list = this.products;
+    return list
+  }
+  
+  addToCart(cartId, product, orderQuantity, customerId) {
+  const customer = customerId
+  const products = []
+  products.push(product)
+  const cart = {
+    id: cartId,
+    products: products,
+    orderQuantity: orderQuantity,
+    customer: customer
+   }
+  this.carts.push(cart)
+  return this.carts
+}
+  
+   removeFromCart(productId){
+    let cartProduct = this.addToCart(productId)
+    let index = this.products.indexOf(cartProduct)
+    this.products.splice(index,1)
+  }
+  
+    createOrder(orderId, cartId){
+    var order = {orderId:orderId,cartId:cartId}
+    this.products.push(order)
+    return this.products
+  }
+  
+  cancelOrder(orderId){
+    let order = this.createOrder(orderId)
+    let index = this.products.indexOf(order)
+    this.products.pop(index,1)
+    this.products.shift(index,0)
+   
+  }
+  
+  
+  
+ 
+}
+
+var mumMboga = new MumMboga()
+mumMboga.addProduct(1,"kales",20,5)
+mumMboga.addProduct(2,"tomatoes",10,50)
+mumMboga.addProduct(3,"kales",20,5)
+mumMboga.addProduct(4,"onions",10,50)
+mumMboga.updateProduct(1,"oranges",5,100)
+mumMboga.getProductCatalog()
+mumMboga.addToCart(5,"",80,33618179)
+mumMboga.addToCart(6,"dania",5,35454646)
+mumMboga.addToCart(7,"bananas",8,33618235)
+mumMboga.addToCart(8,"melons",50,35454789)
+mumMboga.removeFromCart(6,"dania",5,35454646)
+mumMboga.createOrder(01,7)
+mumMboga.createOrder(02,6)
+mumMboga.cancelOrder()
+
+console.log(mumMboga.carts)
+
+
+
+
+
+
+[[object Object] {
+  customer: 33618179,
+  id: 5,
+  orderQuantity: 80,
+  products: [""]
+}, [object Object] {
+  customer: 35454646,
+  id: 6,
+  orderQuantity: 5,
+  products: ["dania"]
+}, [object Object] {
+  customer: 33618235,
+  id: 7,
+  orderQuantity: 8,
+  products: ["bananas"]
+}]
+ 
