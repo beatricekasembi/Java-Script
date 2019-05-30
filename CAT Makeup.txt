@@ -1,0 +1,286 @@
+
+Quiz 1: addFarm:
+
+class Mkulima {
+  
+  constructor() {
+    this.farms = [];
+    this.vendors = [];
+    this.products = [];
+    this.orders = [];
+  }
+  
+  addFarm(farmId, name, farmer, phone, address){
+    var farm = {id:farmId,name:name,farmer:farmer,phone:phone,address:address}
+    this.farms.push(farm)
+    return this.farms
+  }
+  
+
+}
+
+var mkulima = new Mkulima()
+mkulima.addFarm(1,"Kilima","James",0724465688,"Nairobi")
+mkulima.addFarm(2,"Jakaranda","Wahome",0724455588,"Meru")
+mkulima.addFarm(3,"Mwihoko","Wachira",0728465688,"Nyeri")
+
+console.log(mkulima.farms)
+
+[[object Object] {
+  address: "Nairobi",
+  farmer: "James",
+  id: 1,
+  name: "Kilima",
+  phone: 724465688
+}, [object Object] {
+  address: "Meru",
+  farmer: "Wahome",
+  id: 2,
+  name: "Jakaranda",
+  phone: 724455588
+}, [object Object] {
+  address: "Nyeri",
+  farmer: "Wachira",
+  id: 3,
+  name: "Mwihoko",
+  phone: 728465688
+}]
+
+Quiz 2: removeFarm:
+
+  removeFarm(farmId){
+    let farm = farmId
+    let index = this.farms.indexOf(farm)
+    this.farms.splice(index,1)
+  }
+mkulima.removeFarm()
+console.log(mkulima.farms)
+
+[[object Object] {
+  address: "Nairobi",
+  farmer: "James",
+  id: 1,
+  name: "Kilima",
+  phone: 724465688
+}, [object Object] {
+  address: "Meru",
+  farmer: "Wahome",
+  id: 2,
+  name: "Jakaranda",
+  phone: 724455588
+}]
+
+Quiz 3: updateFarm:
+ updateFarm(farmId, name, farmer, phone, address){
+    var myArray = this.farms
+    var objIndex = myArray.findIndex(obj=>obj.id==farmId);
+    myArray[objIndex].id=farmId
+    myArray[objIndex].name = name
+    myArray[objIndex].farmer = farmer
+    myArray[objIndex].phone = phone
+    myArray[objIndex].address = address
+    
+    return myArray
+  }
+  
+mkulima.updateFarm()
+console.log(mkulima.farms)
+
+
+Quiz 4: getFarm:
+getFarm(farmId){
+    for(var i=0; i<this.farms.length; i++){
+      let farm = this.farms[i]
+      if(farm.id===farmId){
+        return farm
+      }
+    }
+    
+  }
+  mkulima.getFarm()
+console.log(mkulima.farms)
+
+
+Quiz 5: addVendor:
+addVendor(vendorId, name, phone){
+    var vendor = {id:vendorId,name:name,phone:phone}
+    this.vendors.push(vendor)
+    return this.vendors
+  }
+
+mkulima.addVendor(1,"Michael",0727781356)
+mkulima.addVendor(2,"Isaac",0727781386)
+mkulima.addVendor(3,"Kevin",0727781326)
+mkulima.addVendor(4,"Levinah",0727781316)
+console.log(mkulima.vendors)
+
+[[object Object] {
+  id: 1,
+  name: "Michael",
+  phone: 727781356
+}, [object Object] {
+  id: 2,
+  name: "Isaac",
+  phone: 727781386
+}, [object Object] {
+  id: 3,
+  name: "Kevin",
+  phone: 727781326
+}, [object Object] {
+  id: 4,
+  name: "Levinah",
+  phone: 727781316
+}]
+
+Quiz 6: removeVendor:
+removeVendor(vendorId){
+    let vendor = vendorId
+    let index = this.vendors.indexOf(vendor)
+    this.vendors.pop()
+  }
+
+mkulima.removeVendor()
+console.log(mkulima.vendors)
+
+[[object Object] {
+  id: 1,
+  name: "Michael",
+  phone: 727781356
+}, [object Object] {
+  id: 2,
+  name: "Isaac",
+  phone: 727781386
+}, [object Object] {
+  id: 3,
+  name: "Kevin",
+  phone: 727781326
+}]
+
+Quiz 7: updateVendor:
+  updateVendor(vendorId, name, phone){
+    var myArray = this.vendors
+    var objIndex = myArray.findIndex(obj=>obj.id==vendorId);
+    myArray[objIndex].id=vendorId;
+    myArray[objIndex].name = name;
+    myArray[objIndex].phone = phone; 
+    return myArray
+  }
+mkulima.updateVendor()
+console.log(mkulima.vendors)
+
+Quiz 8: getVendor:
+//    getVendor(vendorId){
+//     for(var i=0; i<this.vendors.length; i++){
+//       let vendor = this.vendors[i]
+//       if(vendor.id===vendorId){
+//         return vendor
+//       }
+//     }
+    
+//   }
+  
+  mkulima.getVendor()
+  console.log(mkulima.vendors)
+
+Quiz 9: addProducts:
+    addProduct(productId, name, price){
+      var product = {id:productId,name:name,price:price}
+        this.products.push(product)
+          return this.products
+  }
+  
+mkulima.addProduct(1,"kales",20,5)
+mkulima.addProduct(2,"tomatoes",10,50)
+mkulima.addProduct(3,"kales",20,5)
+mkulima.addProduct(4,"onions",10,50)
+console.log(mkulima.products)
+
+[[object Object] {
+  id: 1,
+  name: "kales",
+  price: 20
+}, [object Object] {
+  id: 2,
+  name: "tomatoes",
+  price: 10
+}, [object Object] {
+  id: 3,
+  name: "kales",
+  price: 20
+}, [object Object] {
+  id: 4,
+  name: "onions",
+  price: 10
+}]
+
+Quiz 10: removeProduct:
+   removeProduct(productId){
+    
+    let product = productId
+    let index = this.products.indexOf(product)
+    this.products.shift()
+  }
+  
+  mkulima.removeProduct()
+console.log(mkulima.products)
+
+[[object Object] {
+  id: 2,
+  name: "tomatoes",
+  price: 10
+}, [object Object] {
+  id: 3,
+  name: "kales",
+  price: 20
+}, [object Object] {
+  id: 4,
+  name: "onions",
+  price: 10
+}]
+
+Quiz 11: updateProduct:
+  updateProduct( productId, name, price){
+    var myArray = this.products
+    var objIndex = myArray.findIndex(obj=>obj.id==productId);
+    myArray[objIndex].id=productId
+    myArray[objIndex].name = name
+    myArray[objIndex].price = price
+    return myArray
+  }
+  mkulima.updateProduct(1,"oranges",10)
+console.log(mkulima.products)
+
+Quiz 13: printProduct:
+
+Quiz 14: calculateOrderCost
+
+Quiz 15: createOrder:
+ createOrder(orderId, quantity,farmId,storeId){
+    var order = {productId:orderId,quantity:quantity,farmId:farmId,storeId:storeId}
+    this.orders.push(order)
+    return this.orders
+  }
+mkulima.createOrder(2,20,1,2)
+mkulima.createOrder(3,10,2,4)
+
+console.log(mkulima.orders)
+[[object Object] {
+  farmId: 1,
+  productId: 2,
+  quantity: 20,
+  storeId: 2
+}, [object Object] {
+  farmId: 2,
+  productId: 3,
+  quantity: 10,
+  storeId: 4
+}]
+
+
+
+
+
+
+
+
+
