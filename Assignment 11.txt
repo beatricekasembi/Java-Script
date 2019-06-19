@@ -1,0 +1,19 @@
+var body = document.body
+body.style.backgroundColor = "silver"
+
+var h1 = document.getElementById("title")
+h1.style.color = "green"
+
+var h3 = document.getElementById("title2")
+h3.style.textTransform = "upperCase"
+
+var h3 = document.getElementById("title3")
+h3.style.textTransform = "upperCase"
+
+var Fruits = document.createElement("li")
+Fruits.innerHTML = "Pineapple"
+fruList.appendChild(Fruits)
+
+var Vegetables = document.createElement("li")
+Vegetables.innerHTML = "Carrots"
+vegList.appendChild(Vegetables)
