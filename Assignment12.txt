@@ -1,0 +1,24 @@
+var colorChange =()=>{
+  var title = document.getElementById("title");
+  title.style.color=title.style.color=="green"? "silver" : "green"
+};
+
+setInterval(colorChange,1000);
+
+function addfruit(){
+  var li = document.createElement("li");
+  var input = document.getElementById("add");
+  li.innerHTML = input.value;
+  input.value = "";
+  
+  document.getElementById("fruList").appendChild(li);
+}
+ 
+function addvegetable(){
+  var li = document.createElement("li");
+  var input = document.getElementById("add");
+  li.innerHTML = input.value;
+  input.value = "";
+  
+  document.getElementById("vegList").appendChild(li);
+}
